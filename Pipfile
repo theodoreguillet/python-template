@@ -1,0 +1,23 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[scripts]
+start = "python -m app"
+test = "python -m pytest --cov"
+type-check = "python -m mypy ."
+lint = "python lint.py"
+
+[packages]
+
+[dev-packages]
+black = "==20.8b1"
+flake8 = "*"
+isort = "*"
+mypy = "*"
+pytest = "*"
+pytest-cov = "*"
+
+[requires]
+python_version = "3.8"
